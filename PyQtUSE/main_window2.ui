@@ -23,7 +23,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="mainmenu">
        <widget class="QLabel" name="label">
@@ -93,13 +93,13 @@
        </widget>
       </widget>
       <widget class="QWidget" name="variantsrus">
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="startrus_btn">
         <property name="geometry">
          <rect>
-          <x>320</x>
-          <y>460</y>
+          <x>390</x>
+          <y>240</y>
           <width>301</width>
-          <height>51</height>
+          <height>101</height>
          </rect>
         </property>
         <property name="font">
@@ -111,36 +111,18 @@
          <string>Начать тестирование</string>
         </property>
        </widget>
-       <widget class="QTextBrowser" name="textBrowser">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>10</y>
-          <width>611</width>
-          <height>431</height>
-         </rect>
-        </property>
-        <property name="html">
-         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Тест вот такой сложный вот такой крч крутой&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>161</width>
-          <height>511</height>
+          <x>80</x>
+          <y>100</y>
+          <width>231</width>
+          <height>411</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QRadioButton" name="radioButton_3">
+          <widget class="QRadioButton" name="radioButton_r1">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -154,7 +136,7 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
          <item>
-          <widget class="QRadioButton" name="radioButton_4">
+          <widget class="QRadioButton" name="radioButton_r2">
            <property name="text">
             <string>Вариант 2</string>
            </property>
@@ -217,6 +199,80 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
         </layout>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>20</y>
+          <width>411</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выберите вариант и начните тестирование!</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="variant1rus">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>10</y>
+          <width>251</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>ВАРИАНТ 1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="v1r_btn_to_vr">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>к вариантам</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="variant2rus">
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>341</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ВАРИАНТ 2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="v2r_btn_to_vr">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>к вариантам</string>
+        </property>
        </widget>
       </widget>
      </widget>
