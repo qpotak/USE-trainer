@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>823</width>
-    <height>606</height>
+    <width>820</width>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,9 +18,9 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
-      <widget class="QWidget" name="page">
+      <widget class="QWidget" name="mainmenu">
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
@@ -34,7 +34,7 @@
          <string>TextLabel</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>240</x>
@@ -87,7 +87,7 @@
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="variantsrus">
        <widget class="QPushButton" name="pushButton_3">
         <property name="geometry">
          <rect>
@@ -124,7 +124,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -216,7 +216,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>823</width>
+     <width>820</width>
      <height>26</height>
     </rect>
    </property>
