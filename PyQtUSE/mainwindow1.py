@@ -2,21 +2,34 @@ import sys
 from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
+from ui_main_window2 import Ui_MainWindow
+from PyQt6.QtGui import QAction
 
-class MyWidget(QMainWindow):
+
+
+
+class MyWidget(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('main_window2.ui', self)
+        #self.setupUi(self)
+        uic.loadUi('main_window3.ui',self)
 
         self.stackedWidget.setCurrentWidget(self.mainmenu)
 
+        self.variants_rus_act.triggered.connect(self.runrusvar)
+        self.main_act.triggered.connect(self.runmainmenu)
+        mainmenu_action = QAction("Главное меню", self)
+        mainmenu_action.triggered.connect(self.runmainmenu)
+        self.menuBar().insertAction(self.menuBar().actions()[0], mainmenu_action)
+
         self.pushButton.clicked.connect(self.runrusvar)
         self.startrus_btn.clicked.connect(self.startrus)
-        self.v1r_btn_to_vr.clicked.connect(self.runrusvar)
-        self.v2r_btn_to_vr.clicked.connect(self.runrusvar)
+
+
+    def runmainmenu(self):
+        self.stackedWidget.setCurrentWidget(self.mainmenu)
 
     def runrusvar(self):
-        self.label.setText("OK")
         self.stackedWidget.setCurrentWidget(self.variantsrus)
 
     def startrus(self):
