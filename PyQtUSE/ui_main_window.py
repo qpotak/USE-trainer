@@ -172,6 +172,11 @@ class Ui_MainWindow(object):
         self.tsk1ans.setObjectName("tsk1ans")
         self.gridLayout.addWidget(self.tsk1ans, 1, 2, 1, 1)
         self.vrRusTsk1_txt = QtWidgets.QTextBrowser(parent=self.tab)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.vrRusTsk1_txt.sizePolicy().hasHeightForWidth())
+        self.vrRusTsk1_txt.setSizePolicy(sizePolicy)
         self.vrRusTsk1_txt.setMinimumSize(QtCore.QSize(300, 0))
         self.vrRusTsk1_txt.setMaximumSize(QtCore.QSize(16777215, 200))
         font = QtGui.QFont()
@@ -1703,13 +1708,13 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.variants_menu.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "USE-trainer"))
         self.label_11.setText(_translate("MainWindow", "Тренажёр для подготовки к ЕГЭ"))
         self.pushButton.setText(_translate("MainWindow", "РУССКИЙ ЯЗЫК"))
         self.label_2.setText(_translate("MainWindow", "Выберите по русскому вариант и начните тестирование!"))
