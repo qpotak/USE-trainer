@@ -3,7 +3,7 @@ from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem
 
 from ui_main_window import Ui_MainWindow
-from PyQt6.QtGui import QAction
+from PyQt6.QtGui import QAction, QIcon
 import sqlite3
 
 
@@ -11,10 +11,8 @@ class MyWidget(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # uic.loadUi('main_window3.ui',self)
-
+        self.setWindowIcon(QIcon("egeicon.ico"))
         self.stackedWidget.setCurrentWidget(self.mainmenu)
-
         self.variants_rus_act.triggered.connect(self.runrusvar)
         self.main_act.triggered.connect(self.runmainmenu)
         mainmenu_action = QAction("Главное меню", self)
